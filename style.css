@@ -34,6 +34,7 @@
     margin-right: 50px;
     text-decoration: none;
     font-size: 20px;
+   
     
     
     
@@ -103,7 +104,9 @@
     width: 556px;
     height: 438px;
     margin: 67px 140px 86px 0px ;
+    transition: transform 3s ease ;
 }
+
 
 .players{
     display: grid;
@@ -211,3 +214,88 @@
     margin-top:0px;
     margin-bottom: 0px;
 }
+
+/* ...................hover css......... */
+
+.img img:hover{
+    transform: translate(-100px)
+   
+}
+
+
+.a:hover{
+    color: #E02C6D;
+}
+
+.login a:hover{
+    color: #6d0cec;
+}
+.live:hover{
+    color: #6d0cec;
+
+}
+.high-text a:hover{
+    color: #6d0cec;
+}
+
+
+/* media query */
+
+ @media only screen and (max-width: 688px) {
+    .parent-1{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .players{
+
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+        
+    }
+    .highlight-area{
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+       
+
+        .high-text{
+            width: 100%;
+            margin: 0px;
+        }
+        .high-img{
+            width: 300px;
+            position: relative;
+            top: 90px;
+            left: 0px;
+            
+            
+        }
+    
+
+        .footer-main{
+            
+            
+        }
+        .footer-main p{
+            margin-left:0px ;
+        }
+        .icon{
+            position: relative;
+            left: 20px;
+            width: 30px;
+            align-items: center;
+        }
+        .footer{
+            width: 100%;
+            
+        }
+        
+
+    
+} 
